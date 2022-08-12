@@ -15,7 +15,7 @@ const App = () => {
       </View>
       <Text style={styles.inter}>Hello haris this is a test</Text>
       <Text style={styles.montserrat}>Hello fk moeed</Text>
-      <Text style={styles.montserrat}>Hello Hamza</Text>
+      <Text style={styles.montserrat}>Hello Ali Hamza</Text>
     </View>
   );
 };
