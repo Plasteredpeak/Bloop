@@ -31,7 +31,7 @@
 19        android:allowBackup="false"
 19-->D:\Pepe\NFC project\Bloop\android\app\src\main\AndroidManifest.xml:11:7-34
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.6.0] C:\Users\hamza\.gradle\caches\transforms-3\bd0132704e0e7d36cbd43628c3622b83\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.5.0] C:\Users\hamza\.gradle\caches\transforms-3\b4a55227eacdab501a91672a16933d1d\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
 22-->D:\Pepe\NFC project\Bloop\android\app\src\main\AndroidManifest.xml:9:7-41
