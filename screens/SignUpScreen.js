@@ -7,18 +7,18 @@ import Bloop from '../assets/svgs/bloopGradient.svg';
 
 import InputText from '../components/InputText';
 
-const LoginScreen = props => {
+const SignUpScreen = props => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   return (
     <View style={styles.container}>
-
       <View style={styles.logo}>
         <Bloop />
       </View>
       <View style={styles.inner}>
-        <Text style={styles.text}>Welcome Back</Text>
+        <Text style={styles.text}>Register</Text>
         <InputText
           labelValue={email}
           onChangeText={userEmail => setEmail(userEmail)}
@@ -30,33 +30,35 @@ const LoginScreen = props => {
           placeholderText={'Password'}
           iconType={'lock'}
           secureTextEntry={true}></InputText>
+        <InputText
+          labelValue={confirmPassword}
+          onChangeText={userConfirmPassword =>
+            setConfirmPassword(userConfirmPassword)
+          }
+          placeholderText={'Confirm Password'}
+          iconType={'lock'}
+          secureTextEntry={true}></InputText>
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={() => {}}>
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.signUpContainer}>
           <Text style={styles.Stext}>
-            Don't have an acount?
+            Already have an acount?
             <Text
               style={styles.navButton}
               onPress={() => {
-                props.navigation.navigate('SignUpScreen');
+                props.navigation.navigate('LoginScreen');
               }}>
               {' '}
-              Sign Up
+              Log In
             </Text>
           </Text>
         </View>
       </View>
-      <Text
-        onPress={() => {
-          props.navigation.navigate('SplashScreen');
-        }}>
-        Hello Fuck
-      </Text>
     </View>
   );
 };
@@ -80,13 +82,13 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 40,
   },
   text: {
-    marginTop: 30,
-    marginBottom: 30,
+    marginTop: 20,
+    marginBottom: 20,
     fontSize: 22,
     color: Colors.Primary1,
   },
   buttonContainer: {
-    marginTop: 30,
+    marginTop: 20,
     flexDirection: 'row',
     margin: 10,
     width: '80%',
@@ -116,4 +118,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default SignUpScreen;

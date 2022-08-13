@@ -5,6 +5,7 @@ import {Colors} from './Design/Colors';
 
 import SplashScreen from './screens/SplashScreen';
 import LoginScreen from './screens/LoginScreen';
+import SignUpScreen from './screens/SignUpScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -24,8 +25,8 @@ const App = ({route, navigation}) => {
           route={route}
         />
         <Stack.Screen
-          name="SplashScreen"
-          component={SplashScreen}
+          name="SignUpScreen"
+          component={SignUpScreen}
           navigation={navigation}
           route={route}
         />
