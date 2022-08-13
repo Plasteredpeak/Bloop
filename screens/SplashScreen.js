@@ -1,30 +1,34 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Bloop from '../assets/svgs/Bloop';
+import {Colors} from '../Design/Colors';
 
 const SplashScreen = props => {
   return (
     <View style={styles.container}>
-      <Bloop width={300} height={300}></Bloop>
+      <Bloop></Bloop>
       <Text
+        style={styles.text}
         onPress={() => {
           props.navigation.navigate('LoginScreen');
         }}>
-        Hello
+        Sharing.Effortlessly.
       </Text>
     </View>
   );
 };
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'black',
+    flex: 1,
+    backgroundColor: Colors.Primary1,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  flex: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+  text: {
+    fontSize: 24,
+    fontFamily: 'Inter',
+    color: Colors.Monochrome100,
+    marginTop: 40,
   },
 });
 
