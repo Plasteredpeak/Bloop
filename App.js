@@ -80,6 +80,24 @@ const App = ({route, navigation}) => {
         )}
       </NavigationContainer>
     </AuthContext.Provider>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        animationEnabled={true}>
+        <Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+          navigation={navigation}
+          route={route}
+        />
+        <Stack.Screen
+          name="SignUpScreen"
+          component={SignUpScreen}
+          navigation={navigation}
+          route={route}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

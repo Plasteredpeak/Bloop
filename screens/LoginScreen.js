@@ -37,6 +37,7 @@ const LoginScreen = props => {
 
   return (
     <View style={styles.container}>
+
       <View style={styles.logo}>
         <Bloop />
       </View>
@@ -74,6 +75,12 @@ const LoginScreen = props => {
           </Text>
         </View>
       </View>
+      <Text
+        onPress={() => {
+          props.navigation.navigate('SplashScreen');
+        }}>
+        Hello Fuck
+      </Text>
     </View>
   );
 };
