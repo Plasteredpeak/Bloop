@@ -1,22 +1,32 @@
+import 'react-native-gesture-handler';
 import React, {useEffect, useState} from 'react';
 import {Button, Text, View, StyleSheet, TextInput} from 'react-native';
 import {Colors} from './Design/Colors';
-import Bloop from './assets/svgs/Bloop.svg';
 
-const App = () => {
+import SplashScreen from './screens/SplashScreen';
+import LoginScreen from './screens/LoginScreen';
+
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
+const App = ({route, navigation}) => {
   return (
-    <View style={styles.container}>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <Bloop width={200} height={200}></Bloop>
-      </View>
-      <Text style={styles.inter}>Hello haris this is a test</Text>
-      <Text style={styles.montserrat}>Hello fk moeed</Text>
-      <Text style={styles.montserrat}>Hello Ali Hamza</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen
+          name="SplashScreen"
+          component={SplashScreen}
+          navigation={navigation}
+        />
+        <Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+          navigation={navigation}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 const styles = StyleSheet.create({
