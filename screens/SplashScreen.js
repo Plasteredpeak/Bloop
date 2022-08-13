@@ -6,13 +6,6 @@ import {useIsFocused} from '@react-navigation/native';
 
 const SplashScreen = props => {
   const isFocused = useIsFocused();
-  useEffect(() => {
-    if (isFocused) {
-      setTimeout(() => {
-        props.navigation.navigate('LoginScreen');
-      }, 1000);
-    }
-  });
 
   return (
     <View style={styles.container}>

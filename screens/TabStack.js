@@ -12,14 +12,12 @@ import DrawerTab from './DrawerTab';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import Icon from 'react-native-vector-icons/Ionicons';
-
 const Tab = createBottomTabNavigator();
 
 const TabStack = () => {
   return (
     <Tab.Navigator
-      screenOptions={({route}) => ({
+      screenOptions={({route, navigation}) => ({
         headerShown: false,
         tabBarIcon: ({focused, color, size}) => {
           let iconName;

@@ -1,7 +1,10 @@
 import 'react-native-gesture-handler';
 import React, {useEffect, useState} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import Bloop from './assets/svgs/Bloop';
+import {Colors} from './Design/Colors';
 
-import SplashScreen from './screens/SplashScreen';
+//import SplashScreen from './screens/SplashScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import TabStack from './screens/TabStack';
@@ -53,7 +56,12 @@ const App = ({route, navigation}) => {
   }, []);
 
   if (isLoading) {
-    return <SplashScreen />;
+    return (
+      <View style={styles.container}>
+        <Bloop></Bloop>
+        <Text style={styles.text}>Sharing.Effortlessly.</Text>
+      </View>
+    );
   }
   return (
     <AuthContext.Provider value={authContext}>
@@ -82,5 +90,19 @@ const App = ({route, navigation}) => {
     </AuthContext.Provider>
   );
 };
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.Primary1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: 24,
+    fontFamily: 'Inter',
+    color: Colors.Monochrome100,
+    marginTop: 40,
+  },
+});
 
 export default App;
