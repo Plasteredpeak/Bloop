@@ -8,7 +8,7 @@ const SplashScreen = props => {
   useEffect(() => {
     if (isFocused) {
       setTimeout(() => {
-        props.navigation.navigate('LoginScreen');
+        props.navigation.navigate('DemoScreen');
       }, 1000);
     }
   });

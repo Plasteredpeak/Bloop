@@ -4,7 +4,7 @@ import {Button, Text, View, StyleSheet, TextInput} from 'react-native';
 import {Colors} from './Design/Colors';
 
 import SplashScreen from './screens/SplashScreen';
-import LoginScreen from './screens/LoginScreen';
+import DemoScreen from './screens/DemoScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -24,8 +24,8 @@ const App = ({route, navigation}) => {
           route={route}
         />
         <Stack.Screen
-          name="LoginScreen"
-          component={LoginScreen}
+          name="DemoScreen"
+          component={DemoScreen}
           navigation={navigation}
           route={route}
         />
