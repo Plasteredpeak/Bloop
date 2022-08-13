@@ -9,7 +9,7 @@ const LoginScreen = props => {
         onPress={() => {
           props.navigation.navigate('SplashScreen');
         }}>
-        Hello Fuck{' '}
+        Hello Fuck
       </Text>
     </View>
   );
