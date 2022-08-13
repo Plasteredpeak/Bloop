@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler';
+
 import React, {useEffect, useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Bloop from './assets/svgs/Bloop';
@@ -11,12 +12,14 @@ import TabStack from './screens/TabStack';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+//import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import {AuthContext} from './components/context';
 
 import Auth from '@react-native-firebase/auth';
 
 const Stack = createStackNavigator();
+//const Drawer = createDrawerNavigator();
 
 const App = ({route, navigation}) => {
   const [isLoading, setIsLoading] = useState(true);

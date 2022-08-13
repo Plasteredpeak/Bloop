@@ -4,6 +4,23 @@
             "outputFile": "D:\\Pepe\\NFC project\\Bloop\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\b4a55227eacdab501a91672a16933d1d\\transformed\\core-1.5.0\\res\\values-kk\\values-kk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "52",
+                        "startColumns": "4",
+                        "startOffsets": "5512",
+                        "endColumns": "100",
+                        "endOffsets": "5608"
+                    }
+                },
+                {
                     "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\2a02c39380d7980eef47a0c33393fa6a\\transformed\\browser-1.4.0\\res\\values-kk\\values-kk.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -18,23 +35,6 @@
                         "startOffsets": "5013,5113,5217,5325",
                         "endColumns": "99,103,107,104",
                         "endOffsets": "5108,5212,5320,5425"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\bd0132704e0e7d36cbd43628c3622b83\\transformed\\core-1.6.0\\res\\values-kk\\values-kk.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "52",
-                        "startColumns": "4",
-                        "startOffsets": "5512",
-                        "endColumns": "100",
-                        "endOffsets": "5608"
                     }
                 },
                 {
