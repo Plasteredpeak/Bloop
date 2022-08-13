@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "164837186719",
+    "project_id": "bloop-214bb",
+    "storage_bucket": "bloop-214bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164837186719:android:1dcd9488ef62035a5f56aa",
+        "android_client_info": {
+          "package_name": "com.bloop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164837186719-9u731ud7ksdbs5o4au9vhjvumgo1rt25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAsYN4-dcgVZpjRCSNlsdn_Yf2_sQhI3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164837186719-9u731ud7ksdbs5o4au9vhjvumgo1rt25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
