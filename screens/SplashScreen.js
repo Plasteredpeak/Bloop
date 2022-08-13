@@ -16,7 +16,8 @@ const SplashScreen = props => {
   return (
     <View style={styles.container}>
       <Bloop></Bloop>
-      <Text>Sharing.Effortlessly.</Text>
+      {/* Trying to fix things 😒 */}
+      <Text>Sharing.Effortlessly</Text>
     </View>
   );
 };
