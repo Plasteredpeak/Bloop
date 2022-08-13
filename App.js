@@ -14,16 +14,20 @@ const Stack = createStackNavigator();
 const App = ({route, navigation}) => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        animationEnabled={true}>
         <Stack.Screen
           name="SplashScreen"
           component={SplashScreen}
           navigation={navigation}
+          route={route}
         />
         <Stack.Screen
           name="LoginScreen"
           component={LoginScreen}
           navigation={navigation}
+          route={route}
         />
       </Stack.Navigator>
     </NavigationContainer>
