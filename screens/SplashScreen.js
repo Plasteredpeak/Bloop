@@ -2,18 +2,22 @@ import React, {useState, useEffect} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Bloop from '../assets/svgs/Bloop';
 import {Colors} from '../Design/Colors';
+import {useIsFocused} from '@react-navigation/native';
 
 const SplashScreen = props => {
+  const isFocused = useIsFocused();
+  useEffect(() => {
+    if (isFocused) {
+      setTimeout(() => {
+        props.navigation.navigate('LoginScreen');
+      }, 1000);
+    }
+  });
+
   return (
     <View style={styles.container}>
       <Bloop></Bloop>
-      <Text
-        style={styles.text}
-        onPress={() => {
-          props.navigation.navigate('LoginScreen');
-        }}>
-        Sharing.Effortlessly.
-      </Text>
+      <Text>Sharing.Effortlessly.</Text>
     </View>
   );
 };

@@ -15,7 +15,9 @@ const Stack = createStackNavigator();
 const App = ({route, navigation}) => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        animationEnabled={true}>
         <Stack.Screen
           name="LoginScreen"
           component={LoginScreen}
