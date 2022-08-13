@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Alert} from 'react-native';
 
 import {Colors} from '../Design/Colors';
 
@@ -7,10 +7,52 @@ import Bloop from '../assets/svgs/bloopGradient.svg';
 
 import InputText from '../components/InputText';
 
+import Auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
+
+import {AuthContext} from '../components/context';
+
 const SignUpScreen = props => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const {signUp} = React.useContext(AuthContext);
+
+  const SignUp = () => {
+    if (email.length > 0 && password.length > 0 && confirmPassword.length > 0) {
+      if (password != confirmPassword) {
+        Alert.alert('Password does not match');
+      } else {
+        Auth()
+          .createUserWithEmailAndPassword(email, password)
+          .then(async userCredential => {
+            firestore()
+              .collection('users')
+              .doc(userCredential.user.uid)
+              .set({
+                email: email,
+                password: password,
+                name: '',
+                username: '',
+                image: '',
+                bio: '',
+              })
+              .then(docRef => {
+                console.log('Document Added');
+                signUp(userCredential.user);
+              })
+              .catch(error => {
+                console.error('Error adding document: ', error);
+              });
+          })
+          .catch(error => {
+            Alert.alert(error.code, error.message);
+          });
+      }
+    } else {
+      Alert.alert('Please fill all the fields');
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -40,7 +82,7 @@ const SignUpScreen = props => {
           secureTextEntry={true}></InputText>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <TouchableOpacity style={styles.button} onPress={() => SignUp()}>
             <Text style={styles.buttonText}>Sign Up</Text>
           </TouchableOpacity>
         </View>

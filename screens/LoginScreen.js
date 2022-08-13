@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Alert} from 'react-native';
 
 import {Colors} from '../Design/Colors';
 
@@ -7,9 +7,33 @@ import Bloop from '../assets/svgs/bloopGradient.svg';
 
 import InputText from '../components/InputText';
 
+import Auth from '@react-native-firebase/auth';
+
+import {AuthContext} from '../components/context';
+
 const LoginScreen = props => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const {signIn} = React.useContext(AuthContext);
+
+  const SignIn = () => {
+    if (email.length > 0 && password.length > 0) {
+      Auth()
+        .signInWithEmailAndPassword(email, password)
+        .then(userCredential => {
+          // Signed in
+          var user = userCredential.user;
+          signIn(user.uid);
+        })
+        .catch(error => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          Alert.alert(errorCode, errorMessage);
+        });
+    } else {
+      Alert.alert('Please enter email and password');
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -32,7 +56,7 @@ const LoginScreen = props => {
           secureTextEntry={true}></InputText>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <TouchableOpacity style={styles.button} onPress={() => SignIn()}>
             <Text style={styles.buttonText}>Login</Text>
           </TouchableOpacity>
         </View>
