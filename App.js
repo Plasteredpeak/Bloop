@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 
 const App = ({route, navigation}) => {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={styles.container}>
       <Stack.Navigator
         screenOptions={{headerShown: false}}
         animationEnabled={true}>
@@ -39,20 +39,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: 40,
     padding: 8,
-  },
-  inter: {
-    margin: 24,
-    fontSize: 18,
-    textAlign: 'center',
-    fontFamily: 'Inter',
-    color: Colors.Accent1,
-  },
-  montserrat: {
-    margin: 24,
-    fontSize: 18,
-    textAlign: 'center',
-    fontFamily: 'Montserrat',
-    color: Colors.Secondary1,
   },
 });
 

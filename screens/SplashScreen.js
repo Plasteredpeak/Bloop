@@ -3,7 +3,6 @@ import {View, Text, StyleSheet} from 'react-native';
 import Bloop from '../assets/svgs/Bloop';
 import {Colors} from '../Design/Colors';
 import {useIsFocused} from '@react-navigation/native';
-
 const SplashScreen = props => {
   const isFocused = useIsFocused();
   useEffect(() => {
