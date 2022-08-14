@@ -7,12 +7,11 @@ import {Colors} from '../Design/Colors';
 import Menu from '../assets/svgs/menu.svg';
 import Home from '../assets/svgs/HomeIcon.svg';
 import Icon from '../assets/svgs/lockIcon.svg';
-import Edit from '../assets/svgs/edit.svg';
+import Activate from '../assets/svgs/activate.svg';
 
 import HomeScreen from './HomeScreen';
-import DrawerTab from './DrawerTab';
 import DemoScreen from './DemoScreen';
-import ProfileScreen from './ProfileScreen';
+import BloopScreen from './BloopScreen';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
@@ -45,11 +44,11 @@ const TabStack = () => {
             ) : (
               <Icon width="25" height="25" fill={Colors.Monochrome500} />
             );
-          } else if (route.name === 'ProfileScreen') {
+          } else if (route.name === 'BloopScreen') {
             return focused ? (
-              <Edit width="25" height="25" fill={Colors.Accent1} />
+              <Activate width="25" height="25" fill={Colors.Accent1} />
             ) : (
-              <Edit width="25" height="25" fill={Colors.Monochrome500} />
+              <Activate width="25" height="25" fill={Colors.Monochrome500} />
             );
           }
           // You can return any component that you like here!
@@ -70,8 +69,8 @@ const TabStack = () => {
         })}
       />
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
+      <Tab.Screen name="BloopScreen" component={BloopScreen} />
       <Tab.Screen name="DemoScreen" component={DemoScreen} />
-      <Tab.Screen name="ProfileScreen" component={ProfileScreen} />
     </Tab.Navigator>
   );
 };
