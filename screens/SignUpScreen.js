@@ -118,14 +118,14 @@ const styles = StyleSheet.create({
   inner: {
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
-    height: '65%',
+    height: '55%',
     width: '100%',
     borderTopRightRadius: 40,
     borderTopLeftRadius: 40,
   },
   text: {
-    marginTop: 15,
-    marginBottom: 15,
+    marginTop: 20,
+    marginBottom: 20,
     fontSize: 22,
     color: Colors.Primary1,
   },
