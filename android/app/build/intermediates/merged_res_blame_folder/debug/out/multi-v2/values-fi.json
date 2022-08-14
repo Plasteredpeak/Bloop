@@ -72,6 +72,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\9b1a55187cc2dfdf509808141613e3aa\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,178,243,293",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "173,238,288,337"
+                    },
+                    "to": {
+                        "startLines": "53,54,55,56",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5540,5663,5728,5778",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "5658,5723,5773,5822"
+                    }
+                },
+                {
                     "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\2a02c39380d7980eef47a0c33393fa6a\\transformed\\browser-1.4.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5",
