@@ -73,18 +73,17 @@ const App = ({route, navigation}) => {
       <NavigationContainer>
         {userToken !== null ? (
           <Drawer.Navigator
-            drawerBackgroundColor="transparent"
             screenOptions={{
               drawerStyle: {
                 borderTopRightRadius: 30,
                 borderBottomRightRadius: 30,
-                width: '60%',
+                width: '70%',
               },
               headerShown: false,
             }}
             drawerContent={props => <DrawerTab {...props} />}>
             <Drawer.Screen name="TabStack" component={TabStack} />
-            {/* <Drawer.Screen name="ProfileScreen" component={ProfileScreen} /> */}
+            <Drawer.Screen name="ProfileScreen" component={ProfileScreen} />
           </Drawer.Navigator>
         ) : (
           <Stack.Navigator screenOptions={{headerShown: false}}>

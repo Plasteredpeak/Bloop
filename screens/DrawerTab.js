@@ -12,6 +12,7 @@ import Bloop from '../assets/svgs/bloopGradient.svg';
 import Home from '../assets/svgs/HomeIcon.svg';
 import Logout from '../assets/svgs/logout.svg';
 import Edit from '../assets/svgs/edit.svg';
+import Activate from '../assets/svgs/activate.svg';
 
 export const DrawerTab = props => {
   const {signOut} = React.useContext(AuthContext);
@@ -32,6 +33,17 @@ export const DrawerTab = props => {
           label="Home"
           onPress={() => {
             props.navigation.navigate('HomeScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Activate width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Activate Bloop"
+          onPress={() => {
+            props.navigation.navigate('BloopScreen');
           }}
         />
         <DrawerItem
