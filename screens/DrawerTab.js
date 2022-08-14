@@ -11,6 +11,10 @@ import {Colors} from '../Design/Colors';
 import Bloop from '../assets/svgs/bloopGradient.svg';
 import Home from '../assets/svgs/HomeIcon.svg';
 import Logout from '../assets/svgs/logout.svg';
+import Edit from '../assets/svgs/edit.svg';
+import Activate from '../assets/svgs/activate.svg';
+import Buy from '../assets/svgs/buy.svg';
+import Help from '../assets/svgs/help.svg';
 
 export const DrawerTab = props => {
   const {signOut} = React.useContext(AuthContext);
@@ -31,6 +35,50 @@ export const DrawerTab = props => {
           label="Home"
           onPress={() => {
             props.navigation.navigate('HomeScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Activate width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Activate Bloop"
+          onPress={() => {
+            props.navigation.navigate('BloopScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Edit width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Edit Profile"
+          onPress={() => {
+            props.navigation.navigate('ProfileScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Buy width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Buy Bloop"
+          onPress={() => {
+            props.navigation.navigate('BuyScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Help width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Help"
+          onPress={() => {
+            props.navigation.navigate('HelpScreen');
           }}
         />
         <DrawerItem
