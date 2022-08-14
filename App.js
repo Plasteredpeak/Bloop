@@ -9,17 +9,18 @@ import {Colors} from './Design/Colors';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import TabStack from './screens/TabStack';
+import {DrawerTab} from './screens/DrawerTab';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-//import {createDrawerNavigator} from '@react-navigation/drawer';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import {AuthContext} from './components/context';
 
 import Auth from '@react-native-firebase/auth';
 
 const Stack = createStackNavigator();
-//const Drawer = createDrawerNavigator();
+const Drawer = createDrawerNavigator();
 
 const App = ({route, navigation}) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -70,9 +71,19 @@ const App = ({route, navigation}) => {
     <AuthContext.Provider value={authContext}>
       <NavigationContainer>
         {userToken !== null ? (
-          <Stack.Navigator screenOptions={{headerShown: false}}>
-            <Stack.Screen name="TabStack" component={TabStack} />
-          </Stack.Navigator>
+          <Drawer.Navigator
+            drawerBackgroundColor="transparent"
+            screenOptions={{
+              drawerStyle: {
+                borderTopRightRadius: 30,
+                borderBottomRightRadius: 30,
+                width: '60%',
+              },
+              headerShown: false,
+            }}
+            drawerContent={props => <DrawerTab {...props} />}>
+            <Drawer.Screen name="TabStack" component={TabStack} />
+          </Drawer.Navigator>
         ) : (
           <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen

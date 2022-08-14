@@ -19,6 +19,7 @@ const Tab = createBottomTabNavigator();
 const TabStack = () => {
   return (
     <Tab.Navigator
+      initialRouteName="HomeScreen"
       screenOptions={({route, navigation}) => ({
         headerShown: false,
         tabBarIcon: ({focused, color, size}) => {
@@ -30,9 +31,9 @@ const TabStack = () => {
             ) : (
               <Home width="25" height="25" fill={Colors.Monochrome500} />
             );
-          } else if (route.name === 'DrawerTab') {
+          } else if (route.name === 'Screen') {
             return focused ? (
-              <Menu width="25" height="25" fill={Colors.Accent1} />
+              <Menu width="25" height="25" fill={Colors.Monochrome500} />
             ) : (
               <Menu width="25" height="25" fill={Colors.Monochrome500} />
             );
@@ -50,7 +51,16 @@ const TabStack = () => {
           height: 50,
         },
       })}>
-      <Tab.Screen name="DrawerTab" component={DrawerTab} />
+      <Tab.Screen
+        name="Screen"
+        component={HomeScreen}
+        listeners={({navigation}) => ({
+          tabPress: e => {
+            e.preventDefault();
+            navigation.openDrawer();
+          },
+        })}
+      />
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
       <Tab.Screen name="DemoScreen" component={DemoScreen} />
     </Tab.Navigator>
