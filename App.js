@@ -10,6 +10,7 @@ import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import TabStack from './screens/TabStack';
 import {DrawerTab} from './screens/DrawerTab';
+import ProfileScreen from './screens/ProfileScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -83,6 +84,7 @@ const App = ({route, navigation}) => {
             }}
             drawerContent={props => <DrawerTab {...props} />}>
             <Drawer.Screen name="TabStack" component={TabStack} />
+            {/* <Drawer.Screen name="ProfileScreen" component={ProfileScreen} /> */}
           </Drawer.Navigator>
         ) : (
           <Stack.Navigator screenOptions={{headerShown: false}}>

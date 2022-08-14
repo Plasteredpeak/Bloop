@@ -72,6 +72,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\9b1a55187cc2dfdf509808141613e3aa\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,132,186,240,287",
+                        "endColumns": "76,53,53,46,116",
+                        "endOffsets": "127,181,235,282,399"
+                    },
+                    "to": {
+                        "startLines": "53,54,55,56,57",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "5040,5117,5171,5225,5272",
+                        "endColumns": "76,53,53,46,116",
+                        "endOffsets": "5112,5166,5220,5267,5384"
+                    }
+                },
+                {
                     "source": "C:\\Users\\hamza\\.gradle\\caches\\transforms-3\\2a02c39380d7980eef47a0c33393fa6a\\transformed\\browser-1.4.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2,3,4,5",

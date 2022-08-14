@@ -11,6 +11,7 @@ import {Colors} from '../Design/Colors';
 import Bloop from '../assets/svgs/bloopGradient.svg';
 import Home from '../assets/svgs/HomeIcon.svg';
 import Logout from '../assets/svgs/logout.svg';
+import Edit from '../assets/svgs/edit.svg';
 
 export const DrawerTab = props => {
   const {signOut} = React.useContext(AuthContext);
@@ -31,6 +32,17 @@ export const DrawerTab = props => {
           label="Home"
           onPress={() => {
             props.navigation.navigate('HomeScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Edit width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Edit Profile"
+          onPress={() => {
+            props.navigation.navigate('ProfileScreen');
           }}
         />
         <DrawerItem

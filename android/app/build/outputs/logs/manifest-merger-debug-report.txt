@@ -11,18 +11,21 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\hamza\
 MERGED from [:react-native-community_masked-view] D:\Pepe\NFC project\Bloop\node_modules\@react-native-community\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-firebase_firestore] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-32:12
 MERGED from [:react-native-gesture-handler] D:\Pepe\NFC project\Bloop\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-33:12
 MERGED from [:react-native-safe-area-context] D:\Pepe\NFC project\Bloop\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] D:\Pepe\NFC project\Bloop\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-svg] D:\Pepe\NFC project\Bloop\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] D:\Pepe\NFC project\Bloop\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hamza\.gradle\caches\transforms-3\068ab29645ee5ba736a94e5740b232d6\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1b85878ea0d653a7ff638ee47e2aef37\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\2cd44d9a2782b82b8c71c1b177699a9c\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hamza\.gradle\caches\transforms-3\dde8e329c7c870585dd7fa9a11087c5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] D:\Pepe\NFC project\Bloop\node_modules\react-native-reanimated\android\build\.transforms\d7e96239e6c89e3151a716de7b5e25d1\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f18c60ff622308327b121ad760d1b7d6\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c4e7109ee898349844c0e5158db2f0a1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\hamza\.gradle\caches\transforms-3\e80b5713a9aca5f2ac6c4c84b5f8054e\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:15:1-40:12
@@ -42,16 +45,13 @@ MERGED from [com.facebook.fresco:imagepipeline:2.6.0] C:\Users\hamza\.gradle\cac
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\aa45f5245ce5480d3569538472f693d1\transformed\jetified-nativeimagetranscoder-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\2f5866186dd305a1da45d5107d49fcbf\transformed\jetified-imagepipeline-base-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\hamza\.gradle\caches\transforms-3\f9a866d3672534ff62396f556cbde036\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\hamza\.gradle\caches\transforms-3\9b1a55187cc2dfdf509808141613e3aa\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\0ff1e4888fd7eba473ee58a30b602b04\transformed\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\3872bc365fe87f1c2655273e7fafc583\transformed\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\hamza\.gradle\caches\transforms-3\62cf8b707a436b2b20463893c16283d2\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.autofill:autofill:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\711d1dc27ac4be2e59179205d1e63330\transformed\jetified-autofill-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\04bf80964f83af39ef0053a3efcd6ef2\transformed\jetified-middleware-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\de575ad94a0144c9ef54fb28bc802c06\transformed\jetified-ui-common-2.6.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\hamza\.gradle\caches\transforms-3\2a02c39380d7980eef47a0c33393fa6a\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\bf750fa493fe34ee8cd99f49484c18f8\transformed\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\6757bdb798854f5a38916d71c6d71d4f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c6ef410c8e7029c206d623b4d61ac397\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\hamza\.gradle\caches\transforms-3\5be02cb9470480df1cc08c8da19c6dc7\transformed\jetified-core-ktx-1.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\ccc2bdf144aece8896a43d1e39401fc8\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\hamza\.gradle\caches\transforms-3\95a8d95d27d5b7be77f11fea0f00c8d9\transformed\jetified-play-services-auth-20.2.0\AndroidManifest.xml:17:1-40:12
@@ -66,14 +66,17 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hamza\.gradle\caches
 MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\hamza\.gradle\caches\transforms-3\94ec044d8298a1665120bc9570e6a5d5\transformed\fragment-1.3.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f3826d992da6a6e543a73042c48357d5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.2.3] C:\Users\hamza\.gradle\caches\transforms-3\2444cc95538263ef74628c25343035ba\transformed\jetified-activity-1.2.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\bf750fa493fe34ee8cd99f49484c18f8\transformed\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\5f7854dd1c5c57113826b21daceedf35\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\hamza\.gradle\caches\transforms-3\79c28ebd6d0d6a089435cf7d51895bdb\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\90b7415c18fad33416b6dc7faf28608e\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1c60818cbd83a161ee5d2647d76ee944\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\hamza\.gradle\caches\transforms-3\2a02c39380d7980eef47a0c33393fa6a\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\274dfd005d2c1b52a6575919a546b452\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\a902811e79f710dfa78ef73f70eb18d1\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\8217e457c5a2799938f0110edb588332\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\7ab6bf3b187fc810059b4859f79b529c\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\6757bdb798854f5a38916d71c6d71d4f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\e4e69444c0b4724d72ac649aa7b01640\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.6.0] C:\Users\hamza\.gradle\caches\transforms-3\bd0132704e0e7d36cbd43628c3622b83\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hamza\.gradle\caches\transforms-3\120d45e43ed1711d0024d388ed2aaae4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -81,6 +84,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\hamza\.gradl
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\hamza\.gradle\caches\transforms-3\35cc3fecf6105024581a77cbcfbe7b94\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\hamza\.gradle\caches\transforms-3\b027d4caee4a27481fd32f3e74686157\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\0e0a2659db736519416c3208765fde9b\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c6ef410c8e7029c206d623b4d61ac397\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\hamza\.gradle\caches\transforms-3\e03b59720f90c2d1bd210bffa0b5aba5\transformed\exifinterface-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\165282b76c0906d4ff23dc1c8666ef1a\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hamza\.gradle\caches\transforms-3\f524b9a4ef231267e226158397f2edbd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\077f735d64adc33a390a59753b4cf583\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -116,10 +121,14 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\hamza\.gradle\caches
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\hamza\.gradle\caches\transforms-3\0b1ec2c07973cfa5079dd71e2b1acd9d\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:15:5-67
 MERGED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
 MERGED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
 	android:name
 		ADDED from D:\Pepe\NFC project\Bloop\android\app\src\main\AndroidManifest.xml:4:22-64
 application
@@ -128,12 +137,16 @@ MERGED from D:\Pepe\NFC project\Bloop\android\app\src\main\AndroidManifest.xml:6
 MERGED from D:\Pepe\NFC project\Bloop\android\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-30:19
 MERGED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-30:19
+MERGED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-31:19
+MERGED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-31:19
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hamza\.gradle\caches\transforms-3\068ab29645ee5ba736a94e5740b232d6\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hamza\.gradle\caches\transforms-3\068ab29645ee5ba736a94e5740b232d6\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f18c60ff622308327b121ad760d1b7d6\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f18c60ff622308327b121ad760d1b7d6\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c4e7109ee898349844c0e5158db2f0a1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
@@ -224,10 +237,14 @@ MERGED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules
 MERGED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-firebase_firestore] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-firebase_firestore] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
 MERGED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
 MERGED from [:react-native-gesture-handler] D:\Pepe\NFC project\Bloop\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] D:\Pepe\NFC project\Bloop\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] D:\Pepe\NFC project\Bloop\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] D:\Pepe\NFC project\Bloop\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] D:\Pepe\NFC project\Bloop\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -238,8 +255,8 @@ MERGED from [:react-native-vector-icons] D:\Pepe\NFC project\Bloop\node_modules\
 MERGED from [:react-native-vector-icons] D:\Pepe\NFC project\Bloop\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hamza\.gradle\caches\transforms-3\068ab29645ee5ba736a94e5740b232d6\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hamza\.gradle\caches\transforms-3\068ab29645ee5ba736a94e5740b232d6\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1b85878ea0d653a7ff638ee47e2aef37\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1b85878ea0d653a7ff638ee47e2aef37\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\2cd44d9a2782b82b8c71c1b177699a9c\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\2cd44d9a2782b82b8c71c1b177699a9c\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hamza\.gradle\caches\transforms-3\dde8e329c7c870585dd7fa9a11087c5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hamza\.gradle\caches\transforms-3\dde8e329c7c870585dd7fa9a11087c5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] D:\Pepe\NFC project\Bloop\node_modules\react-native-reanimated\android\build\.transforms\d7e96239e6c89e3151a716de7b5e25d1\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:5:5-7:41
@@ -248,6 +265,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f18c60ff622308327b121ad760d1b7d6\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f18c60ff622308327b121ad760d1b7d6\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c4e7109ee898349844c0e5158db2f0a1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
@@ -286,6 +305,8 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] C:\Users\hamza\.gradl
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\2f5866186dd305a1da45d5107d49fcbf\transformed\jetified-imagepipeline-base-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\hamza\.gradle\caches\transforms-3\f9a866d3672534ff62396f556cbde036\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\hamza\.gradle\caches\transforms-3\f9a866d3672534ff62396f556cbde036\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\hamza\.gradle\caches\transforms-3\9b1a55187cc2dfdf509808141613e3aa\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\hamza\.gradle\caches\transforms-3\9b1a55187cc2dfdf509808141613e3aa\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\0ff1e4888fd7eba473ee58a30b602b04\transformed\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\0ff1e4888fd7eba473ee58a30b602b04\transformed\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\3872bc365fe87f1c2655273e7fafc583\transformed\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
@@ -298,14 +319,6 @@ MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\hamza\.gradle\caches
 MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\04bf80964f83af39ef0053a3efcd6ef2\transformed\jetified-middleware-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\de575ad94a0144c9ef54fb28bc802c06\transformed\jetified-ui-common-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\hamza\.gradle\caches\transforms-3\de575ad94a0144c9ef54fb28bc802c06\transformed\jetified-ui-common-2.6.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\hamza\.gradle\caches\transforms-3\2a02c39380d7980eef47a0c33393fa6a\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\hamza\.gradle\caches\transforms-3\2a02c39380d7980eef47a0c33393fa6a\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\bf750fa493fe34ee8cd99f49484c18f8\transformed\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\bf750fa493fe34ee8cd99f49484c18f8\transformed\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\6757bdb798854f5a38916d71c6d71d4f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\6757bdb798854f5a38916d71c6d71d4f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c6ef410c8e7029c206d623b4d61ac397\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c6ef410c8e7029c206d623b4d61ac397\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\hamza\.gradle\caches\transforms-3\5be02cb9470480df1cc08c8da19c6dc7\transformed\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\hamza\.gradle\caches\transforms-3\5be02cb9470480df1cc08c8da19c6dc7\transformed\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\ccc2bdf144aece8896a43d1e39401fc8\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -334,6 +347,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hamza\.gradle\
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f3826d992da6a6e543a73042c48357d5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.2.3] C:\Users\hamza\.gradle\caches\transforms-3\2444cc95538263ef74628c25343035ba\transformed\jetified-activity-1.2.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.2.3] C:\Users\hamza\.gradle\caches\transforms-3\2444cc95538263ef74628c25343035ba\transformed\jetified-activity-1.2.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\bf750fa493fe34ee8cd99f49484c18f8\transformed\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hamza\.gradle\caches\transforms-3\bf750fa493fe34ee8cd99f49484c18f8\transformed\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\5f7854dd1c5c57113826b21daceedf35\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\5f7854dd1c5c57113826b21daceedf35\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\hamza\.gradle\caches\transforms-3\79c28ebd6d0d6a089435cf7d51895bdb\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
@@ -342,6 +357,8 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\hamza\.gradle\caches
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\90b7415c18fad33416b6dc7faf28608e\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1c60818cbd83a161ee5d2647d76ee944\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1c60818cbd83a161ee5d2647d76ee944\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\hamza\.gradle\caches\transforms-3\2a02c39380d7980eef47a0c33393fa6a\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\hamza\.gradle\caches\transforms-3\2a02c39380d7980eef47a0c33393fa6a\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\274dfd005d2c1b52a6575919a546b452\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\274dfd005d2c1b52a6575919a546b452\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\a902811e79f710dfa78ef73f70eb18d1\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -350,6 +367,8 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\hamza\.gradle\caches
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\8217e457c5a2799938f0110edb588332\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\7ab6bf3b187fc810059b4859f79b529c\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\hamza\.gradle\caches\transforms-3\7ab6bf3b187fc810059b4859f79b529c\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\6757bdb798854f5a38916d71c6d71d4f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\6757bdb798854f5a38916d71c6d71d4f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\e4e69444c0b4724d72ac649aa7b01640\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hamza\.gradle\caches\transforms-3\e4e69444c0b4724d72ac649aa7b01640\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.6.0] C:\Users\hamza\.gradle\caches\transforms-3\bd0132704e0e7d36cbd43628c3622b83\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
@@ -364,6 +383,10 @@ MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\hamza\.gra
 MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\hamza\.gradle\caches\transforms-3\b027d4caee4a27481fd32f3e74686157\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\0e0a2659db736519416c3208765fde9b\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\0e0a2659db736519416c3208765fde9b\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c6ef410c8e7029c206d623b4d61ac397\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\c6ef410c8e7029c206d623b4d61ac397\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\hamza\.gradle\caches\transforms-3\e03b59720f90c2d1bd210bffa0b5aba5\transformed\exifinterface-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\hamza\.gradle\caches\transforms-3\e03b59720f90c2d1bd210bffa0b5aba5\transformed\exifinterface-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\165282b76c0906d4ff23dc1c8666ef1a\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\165282b76c0906d4ff23dc1c8666ef1a\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hamza\.gradle\caches\transforms-3\f524b9a4ef231267e226158397f2edbd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
@@ -406,14 +429,20 @@ ADDED from [com.facebook.flipper:flipper:0.125.0] C:\Users\hamza\.gradle\caches\
 		ADDED from [com.facebook.flipper:flipper:0.125.0] C:\Users\hamza\.gradle\caches\transforms-3\0b1ec2c07973cfa5079dd71e2b1acd9d\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
 	android:name
 		ADDED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:react-native-firebase_auth] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+MERGED from [:react-native-firebase_storage] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\hamza\.gradle\caches\transforms-3\f9a866d3672534ff62396f556cbde036\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\hamza\.gradle\caches\transforms-3\f9a866d3672534ff62396f556cbde036\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 	android:name
@@ -430,6 +459,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\hamza\.gradle\caches\transforms-3\e80b5713a9aca5f2ac6c4c84b5f8054e\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
 MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\hamza\.gradle\caches\transforms-3\e80b5713a9aca5f2ac6c4c84b5f8054e\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
 	android:exported
@@ -456,6 +487,40 @@ ADDED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@
 		ADDED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-35
 	android:name
 		ADDED from [:react-native-firebase_app] D:\Pepe\NFC project\Bloop\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-88
+queries
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-73
+	android:name
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:22-78
+provider#com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-26:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-94
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:78
+	android:resource
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-75
+	android:name
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-30:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] D:\Pepe\NFC project\Bloop\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-60
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
@@ -516,6 +581,12 @@ ADDED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradl
 		ADDED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\hamza\.gradle\caches\transforms-3\8fe7ee5f07b969d3fb6d6996c6357cfb\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\hamza\.gradle\caches\transforms-3\e80b5713a9aca5f2ac6c4c84b5f8054e\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
 	android:authorities

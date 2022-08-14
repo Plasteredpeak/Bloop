@@ -80,17 +80,20 @@ const styles = StyleSheet.create({
   input: {
     paddingLeft: 20,
     flex: 1,
-    color: Colors.Primary1,
+    color: Colors.Monochrome500,
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: 17,
+    fontSize: 18,
     //borderWidth:1
   },
   textContainer: {
     margin: 1,
   },
   text: {
-    color: Colors.Secondary1,
+    color: Colors.Primary1,
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: '700',
   },
 });
 export default UserInfo;
