@@ -15,6 +15,7 @@ import Edit from '../assets/svgs/edit.svg';
 import Activate from '../assets/svgs/activate.svg';
 import Buy from '../assets/svgs/buy.svg';
 import Help from '../assets/svgs/help.svg';
+import Contact from '../assets/svgs/contacts.svg';
 
 export const DrawerTab = props => {
   const {signOut} = React.useContext(AuthContext);
@@ -57,6 +58,17 @@ export const DrawerTab = props => {
           label="Edit Profile"
           onPress={() => {
             props.navigation.navigate('ProfileScreen');
+          }}
+        />
+        <DrawerItem
+          icon={() => (
+            <Contact width="24" height="24" fill={Colors.Monochrome500} />
+          )}
+          style={styles.item}
+          labelStyle={styles.label}
+          label="Contacts"
+          onPress={() => {
+            props.navigation.navigate('ContactScreen');
           }}
         />
         <DrawerItem
