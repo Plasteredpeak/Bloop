@@ -281,7 +281,7 @@ const HomeScreen = props => {
       <ScrollView
         style={{
           marginHorizontal: 15,
-          height: '65%',
+          height: '68%',
         }}
         contentContainerStyle={{
           flexDirection: 'row',
