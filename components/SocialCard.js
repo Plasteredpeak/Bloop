@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 
 import SocialIcon from '../components/SocialIcon';
 import {Colors} from '../Design/Colors';
 
 const SocialCard = props => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <View style={{margin: 50}}>
         <SocialIcon item={props.item}></SocialIcon>
       </View>
       <Text style={styles.text}>{props.item}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
