@@ -27,7 +27,6 @@ import Website from '../assets/svgs/website';
 
 export default function SocialIcon(props) {
   const item = props.item;
-  console.log(item);
 
   return (
     <View>

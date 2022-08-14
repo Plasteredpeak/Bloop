@@ -39,7 +39,16 @@ const HomeScreen = props => {
 
   const linkArray = [['Link', 'Website']];
 
-  const testArray = ['Instagram', 'Facebook', 'Tiktok', 'Snapchat'];
+  const testArray = [
+    'Instagram',
+    'Facebook',
+    'Tiktok',
+    'Snapchat',
+    'Whatsapp',
+    'Twitter',
+    'Cashapp',
+    'Paypal',
+  ];
 
   const SocialOverlay = () => {
     const [username, setUsername] = useState('');
@@ -227,6 +236,7 @@ const HomeScreen = props => {
               fontFamily: 'Montserrat',
               fontWeight: 'bold',
               fontSize: 24,
+              color: Colors.Monochrome100,
             }}>
             Jennifer Attley
           </Text>
@@ -243,6 +253,7 @@ const HomeScreen = props => {
             style={{
               fontFamily: 'Montserrat',
               fontSize: 12,
+              color: Colors.Monochrome100,
             }}>
             This is a multiline bio about yourself. It should be limited to
             three lines of words which is about 110 chars.
@@ -251,47 +262,43 @@ const HomeScreen = props => {
       </View>
 
       <View style={styles.flex}>
-        <Text style={styles.text}>My Profile</Text>
+        <Text style={[styles.text, {fontWeight: 'bold'}]}>My Profile</Text>
         <View style={[styles.flex, {width: '20%'}]}>
-          <Focus></Focus>
-          <Add></Add>
+          <TouchableOpacity>
+            <Focus></Focus>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              setSocial('');
+              setSocialVisible(false);
+              setModalVisible(true);
+            }}>
+            <Add></Add>
+          </TouchableOpacity>
         </View>
       </View>
 
-      <ScrollView>
-        <View
-          style={{
-            flexDirection: 'row',
-            borderWidth: 1,
-            justifyContent: 'flex-start',
-            alignItems: 'flex-start',
-            marginHorizontal: 15,
-            flexWrap: 'wrap',
-          }}>
-          {testArray.map(item => {
-            return (
-              <View style={{marginBottom: 25, width: 'auto'}}>
-                <SocialCard item={item}></SocialCard>
-              </View>
-            );
-          })}
-          {testArray.map(item => {
-            return (
-              <View style={{marginBottom: 25, width: 'auto'}}>
-                <SocialCard item={item}></SocialCard>
-              </View>
-            );
-          })}
-        </View>
+      <ScrollView
+        style={{
+          marginHorizontal: 15,
+          height: '60%',
+        }}
+        contentContainerStyle={{
+          flexDirection: 'row',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+        }}>
+        {testArray.map(item => {
+          return (
+            <View
+              key={item}
+              style={{width: 'auto', marginBottom: 30, marginRight: 10}}>
+              <SocialCard item={item}></SocialCard>
+            </View>
+          );
+        })}
       </ScrollView>
-
-      <Button
-        title="Open Modal"
-        onPress={() => {
-          setSocial('');
-          setSocialVisible(false);
-          setModalVisible(true);
-        }}></Button>
       <ModalOverlay></ModalOverlay>
       <SocialOverlay></SocialOverlay>
     </View>
@@ -315,7 +322,7 @@ const styles = StyleSheet.create({
   flex: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '90%',
+    width: '93%',
     alignItems: 'center',
   },
   column: {
