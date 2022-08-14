@@ -20,6 +20,7 @@ MERGED from [:react-native-vector-icons] D:\Pepe\NFC project\Bloop\node_modules\
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hamza\.gradle\caches\transforms-3\068ab29645ee5ba736a94e5740b232d6\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1b85878ea0d653a7ff638ee47e2aef37\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hamza\.gradle\caches\transforms-3\dde8e329c7c870585dd7fa9a11087c5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] D:\Pepe\NFC project\Bloop\node_modules\react-native-reanimated\android\build\.transforms\d7e96239e6c89e3151a716de7b5e25d1\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hamza\.gradle\caches\transforms-3\f18c60ff622308327b121ad760d1b7d6\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
@@ -241,6 +242,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hamz
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hamza\.gradle\caches\transforms-3\1b85878ea0d653a7ff638ee47e2aef37\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hamza\.gradle\caches\transforms-3\dde8e329c7c870585dd7fa9a11087c5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hamza\.gradle\caches\transforms-3\dde8e329c7c870585dd7fa9a11087c5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] D:\Pepe\NFC project\Bloop\node_modules\react-native-reanimated\android\build\.transforms\d7e96239e6c89e3151a716de7b5e25d1\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] D:\Pepe\NFC project\Bloop\node_modules\react-native-reanimated\android\build\.transforms\d7e96239e6c89e3151a716de7b5e25d1\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.7] C:\Users\hamza\.gradle\caches\transforms-3\18823fc7eab77338e35e17fbd0d2280f\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.2.2] C:\Users\hamza\.gradle\caches\transforms-3\e9aeb93ae55a5a29865c5712f19d942a\transformed\jetified-firebase-firestore-24.2.2\AndroidManifest.xml:7:5-9:41
