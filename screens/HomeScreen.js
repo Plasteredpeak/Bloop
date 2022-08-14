@@ -39,7 +39,16 @@ const HomeScreen = props => {
 
   const linkArray = [['Link', 'Website']];
 
-  const testArray = ['Instagram', 'Facebook', 'Tiktok', 'Snapchat'];
+  const testArray = [
+    'Instagram',
+    'Facebook',
+    'Tiktok',
+    'Snapchat',
+    'Instagram',
+    'Facebook',
+    'Tiktok',
+    'Snapchat',
+  ];
 
   const SocialOverlay = () => {
     const [username, setUsername] = useState('');
@@ -258,31 +267,25 @@ const HomeScreen = props => {
         </View>
       </View>
 
-      <ScrollView>
-        <View
-          style={{
-            flexDirection: 'row',
-            borderWidth: 1,
-            justifyContent: 'flex-start',
-            alignItems: 'flex-start',
-            marginHorizontal: 15,
-            flexWrap: 'wrap',
-          }}>
-          {testArray.map(item => {
-            return (
-              <View style={{marginBottom: 25, width: 'auto'}}>
-                <SocialCard item={item}></SocialCard>
-              </View>
-            );
-          })}
-          {testArray.map(item => {
-            return (
-              <View style={{marginBottom: 25, width: 'auto'}}>
-                <SocialCard item={item}></SocialCard>
-              </View>
-            );
-          })}
-        </View>
+      <ScrollView
+        style={{
+          borderWidth: 1,
+          marginHorizontal: 15,
+          height: '65%',
+        }}
+        contentContainerStyle={{
+          flexDirection: 'row',
+          justifyContent: 'flex-start',
+          alignItems: 'flex-start',
+          flexWrap: 'wrap',
+        }}>
+        {testArray.map(item => {
+          return (
+            <View style={{width: 'auto', marginBottom: 30}}>
+              <SocialCard item={item}></SocialCard>
+            </View>
+          );
+        })}
       </ScrollView>
 
       <Button
