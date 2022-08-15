@@ -203,6 +203,7 @@ const ProfileScreen = ({navigation}) => {
             <UserInfo
               name={'Bio:'}
               labelValue={bio}
+              multiline={true}
               onChangeText={text => setBio(text)}
             />
           </View>
