@@ -113,6 +113,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  content: {
+    height: '60%',
+    justifyContent: 'space-between',
+  },
   logo: {
     marginTop: 30,
     marginHorizontal: 20,
@@ -126,9 +130,9 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Montserrat-Regular',
     fontSize: 22,
-    fontWeight: '600',
+    fontWeight: '800',
     color: Colors.Monochrome500,
-    marginLeft: -20,
+    marginLeft: -10,
   },
   item: {
     marginLeft: 20,
