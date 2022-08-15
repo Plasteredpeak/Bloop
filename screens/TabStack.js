@@ -6,7 +6,6 @@ import {Text} from 'react-native';
 import {Colors} from '../Design/Colors';
 import Menu from '../assets/svgs/menu.svg';
 import Home from '../assets/svgs/HomeIcon.svg';
-import Icon from '../assets/svgs/lockIcon.svg';
 import Activate from '../assets/svgs/activate.svg';
 import Contact from '../assets/svgs/contacts.svg';
 

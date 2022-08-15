@@ -96,8 +96,6 @@ const ProfileScreen = ({navigation}) => {
   };
   React.useEffect(() => {
     getData();
-    console.log('img:', image);
-    console.log('url:', url);
   }, []);
 
   const pickImage = () => {
