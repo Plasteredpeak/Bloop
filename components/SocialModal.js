@@ -156,5 +156,6 @@ const styles = StyleSheet.create({
   },
   input: {
     color: Colors.Primary1,
+    width: 230,
   },
 });
