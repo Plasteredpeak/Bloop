@@ -5,27 +5,39 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import {Colors} from '../Design/Colors';
 
+import Help from '../assets/svgs/HelpVector';
+
 const HelpScreen = props => {
   return (
     <View style={styles.container}>
-      <View style={styles.back}>
-        <Icon
-          name="arrow-back"
-          size={30}
-          color={Colors.Primary1}
-          onPress={() => {
-            props.navigation.goBack();
-          }}
-        />
+      <View style={[styles.flex]}>
+        <View style={styles.back}>
+          <Icon
+            name="arrow-back"
+            size={30}
+            color={Colors.Primary1}
+            onPress={() => {
+              props.navigation.goBack();
+            }}
+          />
+        </View>
+        <Text style={[styles.text]}>Help Screen</Text>
       </View>
-      <Text style={styles.text}>Help Screen</Text>
+
+      <Help width="350" height="350" style={{marginTop: 80}}></Help>
+
+      <TouchableOpacity onPress={() => {}} style={styles.flex}>
+        <Text style={[styles.textSml, {width: 300}]}>
+          If you need further Help, Please Contact US on{' '}
+          <Text style={{fontWeight: 'bold', color: Colors.Primary1}}>Link</Text>
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     paddingTop: 40,
     padding: 8,
     alignItems: 'center',
@@ -33,6 +45,27 @@ const styles = StyleSheet.create({
   },
   back: {
     margin: 10,
+  },
+  help: {
+    width: 100,
+  },
+  text: {
+    color: Colors.Primary1,
+    fontSize: 20,
+    fontFamily: 'Montserrat-SemiBold',
+    margin: 20,
+  },
+  textSml: {
+    color: Colors.Primary1,
+    fontSize: 16,
+    fontFamily: 'Montserrat-SemiBold',
+    margin: 20,
+  },
+  flex: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    width: '93%',
+    alignItems: 'center',
   },
 });
 
