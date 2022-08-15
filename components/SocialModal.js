@@ -5,15 +5,23 @@ import {
   StyleSheet,
   TouchableOpacity,
   TextInput,
+  Linking,
 } from 'react-native';
 import Modal from 'react-native-modal';
 import CrossGrey from '../assets/svgs/cross-grey';
 import {Colors} from '../Design/Colors';
 import Copy from '../assets/svgs/copy';
 
+import socialLink from '../utils/sociallink';
+
 export default function SocialModal(props) {
   const [username, setUsername] = useState('');
   const {setSocialVisible, socialVisible, socialSvg, social} = props;
+
+  const loadInBrowser = url => {
+    Linking.openURL(url).catch(err => console.error("Couldn't load page", err));
+  };
+
   return (
     <Modal
       backdropColor="black"
@@ -78,7 +86,10 @@ export default function SocialModal(props) {
               marginBottom: 20,
               backgroundColor: '#dee2e6',
             },
-          ]}>
+          ]}
+          onPress={() => {
+            loadInBrowser(socialLink(social));
+          }}>
           {socialSvg}
           <Text style={[styles.text, {fontSize: 14, width: 180}]}>
             Tap to Open {social} App and Copy the username
