@@ -101,6 +101,7 @@ export const DrawerTab = props => {
           labelStyle={styles.label}
           label="Log Out"
           onPress={() => {
+            props.navigation.closeDrawer();
             Auth().signOut();
             signOut();
           }}
