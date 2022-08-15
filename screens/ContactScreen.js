@@ -15,19 +15,21 @@ import InputText from '../components/InputText';
 
 import {Colors} from '../Design/Colors';
 
+import AddContactOverlay from '../components/AddContactOverlay';
+
 const ContactScreen = props => {
   const [search, setSearch] = useState('');
+  const [contactVisible, setContactVisible] = useState(false);
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <View style={styles.back}>
-          <Icon
-            name="person-add"
-            size={30}
-            color={Colors.Monochrome100}
-            onPress={() => {}}
-          />
-        </View>
+        <TouchableOpacity
+          style={styles.back}
+          onPress={() => {
+            setContactVisible(true);
+          }}>
+          <Icon name="person-add" size={30} color={Colors.Monochrome100} />
+        </TouchableOpacity>
 
         <View style={styles.title}>
           <Text style={styles.text}>Contacts</Text>
@@ -116,6 +118,9 @@ const ContactScreen = props => {
           )}
         />
       </View>
+      <AddContactOverlay
+        contactVisible={contactVisible}
+        setContactVisible={setContactVisible}></AddContactOverlay>
     </View>
   );
 };
