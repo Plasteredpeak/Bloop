@@ -23,6 +23,7 @@ const TabStack = () => {
     <Tab.Navigator
       initialRouteName="HomeScreen"
       screenOptions={({route, navigation}) => ({
+        tabBarHideOnKeyboard: true,
         headerShown: false,
         tabBarIcon: ({focused, color, size}) => {
           let iconName;
