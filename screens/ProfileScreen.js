@@ -225,8 +225,7 @@ const ProfileScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    zIndex: -10,
-    height: '93%',
+    height: '100%',
     backgroundColor: '#F2F3F4',
   },
   back: {

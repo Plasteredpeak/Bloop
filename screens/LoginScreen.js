@@ -37,7 +37,6 @@ const LoginScreen = props => {
 
   return (
     <View style={styles.container}>
-
       <View style={styles.logo}>
         <Bloop />
       </View>
@@ -62,16 +61,13 @@ const LoginScreen = props => {
         </View>
 
         <View style={styles.signUpContainer}>
-          <Text style={styles.Stext}>
+          <Text
+            style={styles.Stext}
+            onPress={() => {
+              props.navigation.navigate('SignUpScreen');
+            }}>
             Don't have an acount?
-            <Text
-              style={styles.navButton}
-              onPress={() => {
-                props.navigation.navigate('SignUpScreen');
-              }}>
-              {' '}
-              Sign Up
-            </Text>
+            <Text style={styles.navButton}> Sign Up</Text>
           </Text>
         </View>
       </View>
