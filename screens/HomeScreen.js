@@ -74,7 +74,8 @@ const HomeScreen = props => {
       setSelected('');
       setPayload('');
     } else {
-      console.log('fail');
+      setClicked(false);
+      console.log('fail or cancelled');
     }
   }
 
@@ -119,6 +120,8 @@ const HomeScreen = props => {
     if (isFocused) {
       console.log('called');
       getData();
+    } else {
+      NfcManager.cancelTechnologyRequest();
     }
   }, [isFocused]);
 
