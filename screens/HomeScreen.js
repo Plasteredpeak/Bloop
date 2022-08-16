@@ -18,9 +18,15 @@ import {useIsFocused} from '@react-navigation/native';
 
 import Add from '../assets/svgs/Add';
 import Focus from '../assets/svgs/Focus';
+import Cross from '../assets/svgs/cross';
+import Edit from '../assets/svgs/edit.svg';
+import Power from '../assets/svgs/power.svg';
+
 import SocialCard from '../components/SocialCard';
 import AddProfileModal from '../components/AddProfileModal';
 import SocialModal from '../components/SocialModal';
+
+import NfcManager, {NfcTech, Ndef} from 'react-native-nfc-manager';
 
 const HomeScreen = props => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -28,13 +34,49 @@ const HomeScreen = props => {
   const [socialVisible, setSocialVisible] = useState(false);
   const [socialSvg, setSocialSvg] = useState();
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [bio, setBio] = useState('');
   const [user, setUser] = useState('');
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const isFocused = useIsFocused();
   const [socialArray, setSocialArray] = useState([]);
+  const [socialdoc, setSocialdoc] = useState();
+  const [focus, setFocus] = useState(false);
+  const [payload, setPayload] = useState('');
+  const [selected, setSelected] = useState('');
+  const [clicked, setClicked] = useState(false);
+
+  async function writeNdef(value) {
+    let result = false;
+    console.log('im ready to write');
+    console.log(value);
+
+    try {
+      // STEP 1
+      await NfcManager.requestTechnology(NfcTech.Ndef);
+
+      const bytes = Ndef.encodeMessage([Ndef.textRecord(value)]);
+
+      if (bytes) {
+        await NfcManager.ndefHandler // STEP 2
+          .writeNdefMessage(bytes); // STEP 3
+        result = true;
+      }
+    } catch (ex) {
+      console.log(ex);
+    } finally {
+      // STEP 4
+      NfcManager.cancelTechnologyRequest();
+    }
+
+    if (result) {
+      console.log('success');
+      setSelected('');
+      setPayload('');
+    } else {
+      console.log('fail');
+    }
+  }
 
   const getData = async () => {
     await firestore()
@@ -47,11 +89,10 @@ const HomeScreen = props => {
         if (documentSnapshot.exists) {
           const doc = documentSnapshot.data();
           setName(doc.name);
-          setEmail(doc.email);
           setUser(doc.username);
           setBio(doc.bio);
           setUrl(doc.image);
-          console.log('User data: ', documentSnapshot.data());
+          //console.log('User data: ', documentSnapshot.data());
         }
       })
       .finally(() => setLoading(false));
@@ -65,9 +106,9 @@ const HomeScreen = props => {
       .get()
       .then(documentSnapshot => {
         if (documentSnapshot.exists) {
-          let SocialDoc = documentSnapshot.data();
-          setSocialArray(Object.keys(SocialDoc));
-          console.log('User data: ', documentSnapshot.data());
+          setSocialdoc(documentSnapshot.data());
+          setSocialArray(Object.keys(documentSnapshot.data()));
+          //console.log('User data: ', socialdoc);
         }
       })
       .finally(() => setLoading(false));
@@ -79,7 +120,6 @@ const HomeScreen = props => {
       console.log('called');
       getData();
     }
-    getData();
   }, [isFocused]);
 
   useEffect(() => {
@@ -183,21 +223,72 @@ const HomeScreen = props => {
         </View>
       </View>
       <View style={styles.flex}>
-        <Text style={[styles.text, {fontWeight: 'bold'}]}>My Profile</Text>
-        <View style={[styles.flex, {width: '20%'}]}>
-          <TouchableOpacity>
-            <Focus></Focus>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              setSocial('');
-              setSocialVisible(false);
-              setModalVisible(true);
-            }}>
-            <Add></Add>
-          </TouchableOpacity>
+        {focus ? (
+          <Text style={[styles.textFocus, {fontWeight: 'bold'}]}>
+            Focus Mode
+          </Text>
+        ) : (
+          <Text style={[styles.text, {fontWeight: 'bold'}]}>My Profile</Text>
+        )}
+        <View style={[styles.flex2, {width: '25%'}]}>
+          {selected == '' ? (
+            <TouchableOpacity
+              onPress={() => {
+                setFocus(true);
+              }}>
+              <Focus></Focus>
+            </TouchableOpacity>
+          ) : (
+            <>
+              <TouchableOpacity
+                onPress={() => {
+                  setClicked(true);
+                  writeNdef(payload);
+                }}
+                disabled={clicked}>
+                <Power fill={Colors.Accent1} width="24" height="24" />
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                onPress={() => {
+                  NfcManager.cancelTechnologyRequest();
+                  setSelected('');
+                  setFocus(true);
+                }}>
+                <Edit fill="#485164" width="24" height="24" />
+              </TouchableOpacity>
+            </>
+          )}
+          {focus ? (
+            <TouchableOpacity
+              onPress={() => {
+                setFocus(false);
+              }}>
+              <Cross fill={Colors.Accent1} width="20" height="20" />
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity
+              onPress={() => {
+                setSocial('');
+                setSocialVisible(false);
+                setModalVisible(true);
+              }}>
+              <Add></Add>
+            </TouchableOpacity>
+          )}
         </View>
       </View>
+      {focus ? (
+        <View style={styles.focus}>
+          <Text style={{fontSize: 18, fontWeight: '600'}}>
+            Select Link for Bloop Focus
+          </Text>
+          <Text style={{fontSize: 15, fontWeight: '400'}}>
+            U can change it later by pressing edit icon{' '}
+          </Text>
+          <Edit fill={Colors.Primary1} width="20" height="20" />
+        </View>
+      ) : null}
       <ScrollView
         style={{
           marginHorizontal: 15,
@@ -210,13 +301,37 @@ const HomeScreen = props => {
           flexWrap: 'wrap',
         }}>
         {socialArray.map(item => {
-          return (
-            <View
-              key={item}
-              style={{width: 'auto', marginBottom: 30, marginHorizontal: 5}}>
-              <SocialCard item={item}></SocialCard>
-            </View>
-          );
+          if (selected == item) {
+            return (
+              <View key={item} style={styles.selected}>
+                <SocialCard
+                  item={item}
+                  press={() => {
+                    if (focus) {
+                      setPayload(socialdoc[item]);
+                      setFocus(false);
+                      setSelected(item);
+                    }
+                  }}></SocialCard>
+              </View>
+            );
+          } else {
+            return (
+              <View
+                key={item}
+                style={focus ? styles.socialFocus : styles.social}>
+                <SocialCard
+                  item={item}
+                  press={() => {
+                    if (focus) {
+                      setPayload(socialdoc[item]);
+                      setFocus(false);
+                      setSelected(item);
+                    }
+                  }}></SocialCard>
+              </View>
+            );
+          }
         })}
       </ScrollView>
       <AddProfileModal
@@ -241,6 +356,12 @@ const styles = StyleSheet.create({
     width: '93%',
     alignItems: 'center',
   },
+  flex2: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    width: '93%',
+    alignItems: 'center',
+  },
   column: {
     flexDirection: 'column',
   },
@@ -251,10 +372,41 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat-SemiBold',
     margin: 20,
   },
+  textFocus: {
+    color: Colors.Accent1,
+    fontSize: 20,
+    fontFamily: 'Montserrat-SemiBold',
+    margin: 20,
+  },
   header: {
     backgroundColor: Colors.Primary1,
     paddingHorizontal: 20,
     paddingVertical: 40,
+  },
+  social: {
+    width: 'auto',
+    marginBottom: 30,
+    marginHorizontal: 3,
+  },
+  socialFocus: {
+    width: 'auto',
+    marginBottom: 30,
+    marginHorizontal: 3,
+    borderWidth: 2,
+    borderColor: Colors.Accent1,
+    borderRadius: 20,
+    borderStyle: 'dashed',
+  },
+  selected: {
+    width: 'auto',
+    marginBottom: 30,
+    marginHorizontal: 3,
+    borderWidth: 2,
+    borderColor: Colors.Accent1,
+    borderRadius: 20,
+  },
+  focus: {
+    marginLeft: 20,
   },
 });
 
