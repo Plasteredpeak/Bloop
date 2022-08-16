@@ -113,8 +113,8 @@ const HomeScreen = props => {
           setSocialArray(arr);
           //console.log('Socials: ', socialdoc);
         }
-      })
-      .finally(() => setLoading(false));
+      });
+
     //console.log(userDocument);
   };
 

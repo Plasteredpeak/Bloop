@@ -132,7 +132,8 @@ export default function SocialModal(props) {
           }}
           onPress={() => {
             addSocial();
-          }}>
+          }}
+          disabled={username == ''}>
           <Text
             style={[
               styles.text,

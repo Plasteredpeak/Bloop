@@ -13,11 +13,37 @@ import CrossGrey from '../assets/svgs/cross-grey';
 import {Colors} from '../Design/Colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import Auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
+
 export default function AppContactOverlay(props) {
-  const {setContactVisible, contactVisible} = props;
-  const {name, setName} = useState('');
-  const {username, setUsername} = useState('');
-  const {image, setImage} = useState('');
+  const {setContactVisible, contactVisible, Refresh} = props;
+  const [name, setName] = useState('');
+  const [username, setUsername] = useState('');
+  //const {image, setImage} = useState('');
+
+  const addContact = () => {
+    firestore()
+      .collection('contacts')
+      .doc(Auth().currentUser.uid)
+      .set(
+        {
+          [name]: username,
+        },
+        {merge: true},
+      )
+      .then(docRef => {
+        console.log('Document Added');
+        setUsername('');
+        setName('');
+        setContactVisible(false);
+        Refresh(true);
+      })
+      .catch(error => {
+        console.error('Error adding document: ', error);
+      });
+  };
+
   return (
     <Modal
       backdropColor="black"
@@ -64,7 +90,7 @@ export default function AppContactOverlay(props) {
           <TextInput
             placeholder="Add Name"
             value={name}
-            onChangeText={setName}
+            onChangeText={name => setName(name)}
             placeholderTextColor={Colors.Primary1}
             style={styles.input}
           />
@@ -75,7 +101,7 @@ export default function AppContactOverlay(props) {
           <TextInput
             placeholder="Add Username"
             value={username}
-            onChangeText={setUsername}
+            onChangeText={username => setUsername(username)}
             placeholderTextColor={Colors.Primary1}
             style={styles.input}
           />
@@ -90,8 +116,9 @@ export default function AppContactOverlay(props) {
         <TouchableOpacity
           style={[styles.btn]}
           onPress={() => {
-            setContactVisible(false);
-          }}>
+            addContact();
+          }}
+          disabled={name == '' && username == ''}>
           <Text
             style={[
               {
