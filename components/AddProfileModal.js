@@ -1,5 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native';
 import Social from '../components/Social';
 import Modal from 'react-native-modal';
 import Cross from '../assets/svgs/cross';
@@ -88,7 +94,7 @@ const styles = StyleSheet.create({
   modal: {
     alignItems: 'center',
     backgroundColor: Colors.Monochrome100,
-    height: '90%',
+    height: 670,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },

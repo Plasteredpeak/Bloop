@@ -88,16 +88,13 @@ const SignUpScreen = props => {
         </View>
 
         <View style={styles.signUpContainer}>
-          <Text style={styles.Stext}>
+          <Text
+            style={styles.Stext}
+            onPress={() => {
+              props.navigation.navigate('LoginScreen');
+            }}>
             Already have an acount?
-            <Text
-              style={styles.navButton}
-              onPress={() => {
-                props.navigation.navigate('LoginScreen');
-              }}>
-              {' '}
-              Log In
-            </Text>
+            <Text style={styles.navButton}> Log In</Text>
           </Text>
         </View>
       </View>
@@ -113,12 +110,12 @@ const styles = StyleSheet.create({
   logo: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: '45%',
+    height: '40%',
   },
   inner: {
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
-    height: '55%',
+    height: '60%',
     width: '100%',
     borderTopRightRadius: 40,
     borderTopLeftRadius: 40,
