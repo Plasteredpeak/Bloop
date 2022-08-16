@@ -34,6 +34,7 @@ const HomeScreen = props => {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const isFocused = useIsFocused();
+  const [socialArray, setSocialArray] = useState([]);
 
   const getData = async () => {
     await firestore()
@@ -57,23 +58,33 @@ const HomeScreen = props => {
     //console.log(userDocument);
   };
 
+  const getSocial = async () => {
+    await firestore()
+      .collection('socials')
+      .doc(Auth().currentUser.uid)
+      .get()
+      .then(documentSnapshot => {
+        if (documentSnapshot.exists) {
+          let SocialDoc = documentSnapshot.data();
+          setSocialArray(Object.keys(SocialDoc));
+          console.log('User data: ', documentSnapshot.data());
+        }
+      })
+      .finally(() => setLoading(false));
+    //console.log(userDocument);
+  };
+
   useEffect(() => {
     if (isFocused) {
       console.log('called');
       getData();
     }
+    getData();
   }, [isFocused]);
 
-  const testArray = [
-    'Instagram',
-    'Facebook',
-    'Tiktok',
-    'Snapchat',
-    'Whatsapp',
-    'Twitter',
-    'Cashapp',
-    'Paypal',
-  ];
+  useEffect(() => {
+    getSocial();
+  }, [socialArray]);
 
   if (loading) {
     return (
@@ -198,7 +209,7 @@ const HomeScreen = props => {
           alignItems: 'center',
           flexWrap: 'wrap',
         }}>
-        {testArray.map(item => {
+        {socialArray.map(item => {
           return (
             <View
               key={item}

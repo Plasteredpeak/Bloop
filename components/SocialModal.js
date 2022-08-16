@@ -7,6 +7,10 @@ import {
   TextInput,
   Linking,
 } from 'react-native';
+
+import Auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
+
 import Modal from 'react-native-modal';
 import CrossGrey from '../assets/svgs/cross-grey';
 import {Colors} from '../Design/Colors';
@@ -17,6 +21,23 @@ import socialLink from '../utils/sociallink';
 export default function SocialModal(props) {
   const [username, setUsername] = useState('');
   const {setSocialVisible, socialVisible, socialSvg, social} = props;
+
+  const addSocial = () => {
+    firestore()
+      .collection('socials')
+      .doc(Auth().currentUser.uid)
+      .update({
+        [social]: username,
+      })
+      .then(docRef => {
+        console.log('Document Added');
+        setUsername('');
+        setSocialVisible(false);
+      })
+      .catch(error => {
+        console.error('Error adding document: ', error);
+      });
+  };
 
   const loadInBrowser = url => {
     Linking.openURL(url).catch(err => console.error("Couldn't load page", err));
@@ -106,7 +127,7 @@ export default function SocialModal(props) {
             borderRadius: 10,
           }}
           onPress={() => {
-            setSocialVisible(false);
+            addSocial();
           }}>
           <Text
             style={[
