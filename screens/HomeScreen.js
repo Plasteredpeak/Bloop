@@ -254,6 +254,7 @@ const HomeScreen = props => {
                   NfcManager.cancelTechnologyRequest();
                   setSelected('');
                   setFocus(true);
+                  setClicked(false);
                 }}>
                 <Edit fill="#485164" width="24" height="24" />
               </TouchableOpacity>
@@ -280,10 +281,10 @@ const HomeScreen = props => {
       </View>
       {focus ? (
         <View style={styles.focus}>
-          <Text style={{fontSize: 18, fontWeight: '600'}}>
+          <Text style={{color: '#485164', fontSize: 18, fontWeight: '600'}}>
             Select Link for Bloop Focus
           </Text>
-          <Text style={{fontSize: 15, fontWeight: '400'}}>
+          <Text style={{color: '#485164', fontSize: 15, fontWeight: '400'}}>
             U can change it later by pressing edit icon{' '}
           </Text>
           <Edit fill={Colors.Primary1} width="20" height="20" />
