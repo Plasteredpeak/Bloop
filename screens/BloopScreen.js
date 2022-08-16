@@ -7,10 +7,15 @@ import NFC from '../assets/svgs/NFCicon.svg';
 
 import NfcManager, {NfcTech} from 'react-native-nfc-manager';
 
+import {useIsFocused} from '@react-navigation/native';
+
 NfcManager.start();
 
 const BloopScreen = props => {
+  const isFocused = useIsFocused();
+
   async function readNdef() {
+    console.log('reading data');
     try {
       // register for the NFC tag with NDEF in it
       await NfcManager.requestTechnology(NfcTech.Ndef);
@@ -19,7 +24,7 @@ const BloopScreen = props => {
       console.log('Tag found', tag);
       Alert.alert('Tag found', tag);
     } catch (ex) {
-      console.warn('Oops!', ex);
+      console.log('Oops!', ex);
     } finally {
       // stop the nfc scanning
       NfcManager.cancelTechnologyRequest();
@@ -27,8 +32,13 @@ const BloopScreen = props => {
   }
 
   useEffect(() => {
-    readNdef();
-  }, []);
+    if (isFocused) {
+      NfcManager.start();
+      readNdef();
+    } else {
+      NfcManager.cancelTechnologyRequest();
+    }
+  }, [isFocused]);
 
   return (
     <View style={styles.container}>

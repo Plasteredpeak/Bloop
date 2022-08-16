@@ -26,9 +26,12 @@ export default function SocialModal(props) {
     firestore()
       .collection('socials')
       .doc(Auth().currentUser.uid)
-      .update({
-        [social]: username,
-      })
+      .set(
+        {
+          [social]: username,
+        },
+        {merge: true},
+      )
       .then(docRef => {
         console.log('Document Added');
         setUsername('');
