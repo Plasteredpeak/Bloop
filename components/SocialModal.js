@@ -32,7 +32,6 @@ export default function SocialModal(props) {
       .then(docRef => {
         console.log('Document Added');
         setUsername('');
-        setSocialVisible(false);
       })
       .catch(error => {
         console.error('Error adding document: ', error);
@@ -128,6 +127,7 @@ export default function SocialModal(props) {
           }}
           onPress={() => {
             addSocial();
+            setSocialVisible(false);
           }}>
           <Text
             style={[

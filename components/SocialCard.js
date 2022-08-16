@@ -6,7 +6,7 @@ import {Colors} from '../Design/Colors';
 
 const SocialCard = props => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={props.press}>
       <View style={{margin: 50}}>
         <SocialIcon item={props.item}></SocialIcon>
       </View>
@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 1},
-    shadowOpacity: 0.8,
+    shadowOpacity: 0.5,
     shadowRadius: 2,
-    elevation: 5,
+    elevation: 3,
   },
   text: {
     width: 'auto',

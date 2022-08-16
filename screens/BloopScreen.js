@@ -1,11 +1,35 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Alert} from 'react-native';
 
 import {Colors} from '../Design/Colors';
 
 import NFC from '../assets/svgs/NFCicon.svg';
 
+import NfcManager, {NfcTech} from 'react-native-nfc-manager';
+
+NfcManager.start();
+
 const BloopScreen = props => {
+  async function readNdef() {
+    try {
+      // register for the NFC tag with NDEF in it
+      await NfcManager.requestTechnology(NfcTech.Ndef);
+      // the resolved tag object will contain `ndefMessage` property
+      const tag = await NfcManager.getTag();
+      console.log('Tag found', tag);
+      Alert.alert('Tag found', tag);
+    } catch (ex) {
+      console.warn('Oops!', ex);
+    } finally {
+      // stop the nfc scanning
+      NfcManager.cancelTechnologyRequest();
+    }
+  }
+
+  useEffect(() => {
+    readNdef();
+  }, []);
+
   return (
     <View style={styles.container}>
       <NFC />
@@ -13,7 +37,11 @@ const BloopScreen = props => {
         Put your Bloop card or Bloop tag to the middle back of your phone, and
         hold it there until activated.This should take 5-10 seconds.
       </Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => {
+          NfcManager.cancelTechnologyRequest();
+        }}>
         <Text style={styles.btnText}>Cancel</Text>
       </TouchableOpacity>
     </View>
