@@ -20,7 +20,7 @@ import socialLink from '../utils/sociallink';
 
 export default function SocialModal(props) {
   const [username, setUsername] = useState('');
-  const {setSocialVisible, socialVisible, socialSvg, social} = props;
+  const {setSocialVisible, socialVisible, socialSvg, social, Refresh} = props;
 
   const addSocial = () => {
     firestore()
@@ -35,6 +35,8 @@ export default function SocialModal(props) {
       .then(docRef => {
         console.log('Document Added');
         setUsername('');
+        setSocialVisible(false);
+        Refresh(true);
       })
       .catch(error => {
         console.error('Error adding document: ', error);
@@ -130,7 +132,6 @@ export default function SocialModal(props) {
           }}
           onPress={() => {
             addSocial();
-            setSocialVisible(false);
           }}>
           <Text
             style={[

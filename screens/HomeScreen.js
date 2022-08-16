@@ -45,6 +45,7 @@ const HomeScreen = props => {
   const [payload, setPayload] = useState('');
   const [selected, setSelected] = useState('');
   const [clicked, setClicked] = useState(false);
+  const [refresh, setRefresh] = useState(false);
 
   async function writeNdef(value) {
     let result = false;
@@ -108,8 +109,9 @@ const HomeScreen = props => {
       .then(documentSnapshot => {
         if (documentSnapshot.exists) {
           setSocialdoc(documentSnapshot.data());
-          setSocialArray(Object.keys(documentSnapshot.data()));
-          //console.log('User data: ', socialdoc);
+          let arr = Object.keys(documentSnapshot.data());
+          setSocialArray(arr);
+          //console.log('Socials: ', socialdoc);
         }
       })
       .finally(() => setLoading(false));
@@ -127,7 +129,8 @@ const HomeScreen = props => {
 
   useEffect(() => {
     getSocial();
-  }, [socialArray]);
+    setRefresh(false);
+  }, [refresh]);
 
   if (loading) {
     return (
@@ -348,7 +351,8 @@ const HomeScreen = props => {
         socialVisible={socialVisible}
         setSocialVisible={setSocialVisible}
         social={social}
-        socialSvg={socialSvg}></SocialModal>
+        socialSvg={socialSvg}
+        Refresh={setRefresh}></SocialModal>
     </View>
   );
 };
