@@ -17,9 +17,37 @@ import {Colors} from '../Design/Colors';
 
 import AddContactOverlay from '../components/AddContactOverlay';
 
+import Auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
+
 const ContactScreen = props => {
   const [search, setSearch] = useState('');
   const [contactVisible, setContactVisible] = useState(false);
+  const [contact, setContact] = useState();
+  const [names, setNames] = useState([]);
+  const [refresh, setRefresh] = useState(false);
+
+  const getContact = async () => {
+    await firestore()
+      .collection('contacts')
+      .doc(Auth().currentUser.uid)
+      .get()
+      .then(documentSnapshot => {
+        if (documentSnapshot.exists) {
+          setContact(documentSnapshot.data());
+          let arr = Object.keys(documentSnapshot.data());
+          setNames(arr);
+          //console.log('Socials: ', socialdoc);
+        }
+      });
+    //console.log(userDocument);
+  };
+
+  useEffect(() => {
+    getContact();
+    setRefresh(false);
+  }, [refresh]);
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -42,77 +70,19 @@ const ContactScreen = props => {
       </View>
       <View style={styles.body}>
         <FlatList
-          data={[
-            {
-              key: '1',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'John Doe',
-              username: 'johndoe',
-            },
-            {
-              key: '2',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'Jane Doe',
-              username: 'janedoe',
-            },
-            {
-              key: '3',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'John Doe',
-              username: 'johndoe',
-            },
-            {
-              key: '4',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'Jane Doe',
-              username: 'janedoe',
-            },
-            {
-              key: '5',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'John Doe',
-              username: 'johndoe',
-            },
-            {
-              key: '6',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'Jane Doe',
-              username: 'janedoe',
-            },
-            {
-              key: '7',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'John Doe',
-              username: 'johndoe',
-            },
-            {
-              key: '8',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'Jane Doe',
-              username: 'janedoe',
-            },
-            {
-              key: '9',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'John Doe',
-              username: 'johndoe',
-            },
-            {
-              key: '10',
-              img: require('../assets/svgs/defaultuser.png'),
-              name: 'Jane Doe',
-              username: 'janedoe',
-            },
-          ]}
-          keyExtractor={item => item.key}
+          data={names}
+          keyExtractor={item => item}
           renderItem={({item}) => (
             <View style={styles.item}>
               <View style={styles.img}>
-                <Image source={item.img} style={styles.img} />
+                <Image
+                  source={require('../assets/svgs/defaultuser.png')}
+                  style={styles.img}
+                />
               </View>
               <View style={styles.textContainer}>
-                <Text style={styles.textname}>{item.name}</Text>
-                <Text style={styles.textuser}>@{item.username}</Text>
+                <Text style={styles.textname}>{item}</Text>
+                {<Text style={styles.textuser}>@{contact[item]}</Text>}
               </View>
             </View>
           )}
@@ -120,7 +90,8 @@ const ContactScreen = props => {
       </View>
       <AddContactOverlay
         contactVisible={contactVisible}
-        setContactVisible={setContactVisible}></AddContactOverlay>
+        setContactVisible={setContactVisible}
+        Refresh={setRefresh}></AddContactOverlay>
     </View>
   );
 };
